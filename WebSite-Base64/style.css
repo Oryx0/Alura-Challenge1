@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 500;
+    color: #007bff;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.input-group, .option-group, .output-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+textarea, select {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    color: #333;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+textarea::placeholder {
+    color: #999;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.copied-text {
+    margin-top: 20px;
+    color: #007bff;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.side-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-image {
+        margin-top: 20px;
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
